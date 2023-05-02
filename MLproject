@@ -1,0 +1,11 @@
+name: word2vec
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      vector_size: {type: int, default: 300}
+      window_size: {type: int, default: 5}
+      negative: {type: int, default: 10}
+    command: "python retrainer/tf/train_pipeline.py model/word2vec_{vector_size}_{window_size}_{negative}.model -psub -v {vector_size} -w {window_size} -n {negative}"

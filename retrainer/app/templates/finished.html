@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .center {
+            margin: auto;
+            margin-top: 50px;
+            width: 50%;
+            border-radius: 25px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: rgb(248, 249, 250);
+            border: none;
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 400;
+            color:dimgrey;
+        }
+
+        .button:hover {
+            border: 1px solid lightgray;
+        }
+    </style>
+    <title>Word2Vec Retrainer</title>
+</head>
+    <body>
+        <div class="center">
+            <h1 style="font-family: monospace; font-weight: 200; font-size: 50px;">
+                Model retrained and logged to mlflow! View it at <a href="http://0.0.0.0:5000" target="_blank">http://0.0.0.0:5000</a>
+            </h1>
+            <div style="height: 50px;"></div>
+            <button class="button" onclick="window.location.href='/'">Return</button>
+        </div>
+    </body>
+</html>
